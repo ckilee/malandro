@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Pegadinha do Mallandro</string>
+
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="choose_image">Escolha a imagem:</string>
+    <string name="choose_audio">Escolha o audio:</string>
+    <string name="choose_time">Escolha o tempo de espera:</string>
+    <string name="start_scare">Pegadinha!</string>
+
+
+    <string-array name="time_arrays" >
+        <item>10 segundos</item>
+        <item>15 segundos</item>
+        <item>20 segundos</item>
+        <item>25 segundos</item>
+        <item>30 segundos</item>
+        <item>35 segundos</item>
+        <item>60 segundos</item>
+        <item>75 segundos</item>
+        <item>90 segundos</item>
+    </string-array>
+
+    <string-array name="image_arrays" >
+        <item>Mallandro 1</item>
+        <item>Mallandro 2</item>
+        <item>Mallandro 3</item>
+        <item>Mallandro 4</item>
+    </string-array>
+
+    <string name="title_activity_scare" translatable="false">Pegadinha do Mallandro</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9505366133372164/6787726331</string>
+    <string name="banner_ad_unit_id2" translatable="false">ca-app-pub-9505366133372164/8264459535</string>
+
+</resources>
