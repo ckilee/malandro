@@ -60,8 +60,8 @@
         android:layout_above="@+id/adView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Title"
-        android:layout_alignEnd="@+id/Title" />
+        android:layout_alignRight="@+id/space"
+        android:layout_alignEnd="@+id/space" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -143,4 +143,11 @@
         android:layout_toRightOf="@+id/button_scare"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
 </RelativeLayout>

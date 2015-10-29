@@ -81,24 +81,23 @@ public class MainActivity extends Activity {
         //Adware Main Activity
         AdView mAdView = (AdView) findViewById(R.id.adView);
 
-        //AdRequest adRequest = new AdRequest.Builder().build();
-        AdRequest adRequest = new AdRequest.Builder()
+        AdRequest adRequest = new AdRequest.Builder().build();
+        /*AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("E112885C2D32D31690C7B60F25C89356")
                 .addTestDevice("13E7A5DDF2981F979D554ED02BC571B3")
-                .build();
-
+                .build();*/
         mAdView.loadAd(adRequest);
 
         //Adware interstitial ads
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(this.getString(R.string.banner_ad_unit_id));
-        AdRequest adRequestInterstitialAd = new AdRequest.Builder()
+        /*AdRequest adRequestInterstitialAd = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("E112885C2D32D31690C7B60F25C89356")
                 .addTestDevice("13E7A5DDF2981F979D554ED02BC571B3")
-                .build();
-        //AdRequest adRequestInterstitialAd = new AdRequest.Builder().build();
+                .build();*/
+        AdRequest adRequestInterstitialAd = new AdRequest.Builder().build();
 
         mInterstitialAd.loadAd(adRequestInterstitialAd);
     }

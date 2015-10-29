@@ -56,7 +56,7 @@ public class PegadinhaActivity extends Activity {
         int delay = 2500;
         if(intertistialLoadedLocally) {
             //If intertistial loading in this class, We will give 1 more second to load banner
-            delay = 3500;
+            delay = 4000;
         }
         new ShowInterstitialTask().execute(delay);
 
