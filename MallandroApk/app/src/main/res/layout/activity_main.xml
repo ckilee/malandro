@@ -60,8 +60,8 @@
         android:layout_above="@+id/adView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/Title"
+        android:layout_alignEnd="@+id/Title" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -133,4 +133,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:id="@+id/share_button"
+        android:layout_alignTop="@+id/button_scare"
+        android:layout_toRightOf="@+id/button_scare"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

@@ -30,12 +30,12 @@ public class MainActivity extends Activity {
     private ImageView imageView;
     private Spinner timeSpinner;
     private Button scareButton;
+    private Button shareButton;
     private int currentTime;
     public static final String TIME_EXTRA = "TimeExtra";
     public static final String IMAGE_EXTRA = "ImageExtra";
     public static final String SOUND_EXTRA = "SoundExtra";
     private int currentImageID = 0;
-    private int currentSoundID = 0;
     private InterstitialAd mInterstitialAd;
     private static MainActivity Instance;
 
@@ -65,6 +65,8 @@ public class MainActivity extends Activity {
         imageView = (ImageView)findViewById(R.id.imageView);
 
         scareButton = (Button)findViewById(R.id.button_scare);
+
+        shareButton = (Button)findViewById(R.id.share_button);
 
         timeSpinner = (Spinner)findViewById(R.id.spinner_time);
         ArrayAdapter adapterTime = ArrayAdapter.createFromResource(this, R.array.time_arrays, android.R.layout.simple_spinner_item);
@@ -129,13 +131,28 @@ public class MainActivity extends Activity {
         timeSpinner.setOnItemSelectedListener(new TimeOnItemSelectedListener());
 
         //Scare Button
-        View.OnClickListener listener = new View.OnClickListener() {
+        View.OnClickListener scareListener = new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 doScare();
             }
         };
-        scareButton.setOnClickListener(listener);
+        scareButton.setOnClickListener(scareListener);
+
+        //Share Button
+        View.OnClickListener shareListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                String message = "Pegadinha do Mallandro - https://play.google.com/store/apps/details?id=dev.br.mallandro";
+                Intent share = new Intent(Intent.ACTION_SEND);
+                share.setType("text/plain");
+                share.putExtra(Intent.EXTRA_TEXT, message);
+
+                startActivity(Intent.createChooser(share, "Pegadinha do Mallandro"));
+
+            }
+        };
+        shareButton.setOnClickListener(shareListener);
 
     }
 

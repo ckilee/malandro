@@ -7,6 +7,7 @@
     <string name="choose_audio">Escolha o audio:</string>
     <string name="choose_time">Escolha o tempo de espera:</string>
     <string name="start_scare">Pegadinha!</string>
+    <string name="share">Compart.</string>
 
 
     <string-array name="time_arrays" >
