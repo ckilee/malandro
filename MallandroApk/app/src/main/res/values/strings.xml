@@ -27,9 +27,10 @@
         <item>Mallandro 2</item>
         <item>Mallandro 3</item>
         <item>Mallandro 4</item>
+        <item>Porta</item>
     </string-array>
 
-    <string name="title_activity_scare" translatable="false">Pegadinha do Mallandro</string>
+    <string name="title_activity_scare" translatable="false">Pegadinha do Malandro</string>
 
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9505366133372164/6787726331</string>
     <string name="banner_ad_unit_id2" translatable="false">ca-app-pub-9505366133372164/8264459535</string>

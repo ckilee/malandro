@@ -183,6 +183,8 @@ public class MainActivity extends Activity {
                 imageResource = R.drawable.mallandro3;
             } else if(pos==3){
                 imageResource = R.drawable.mallandro4;
+            } else if(pos==4){
+                imageResource = R.drawable.porta;
             }
             currentImageID = imageResource;
             Drawable image = getResources().getDrawable(imageResource);
