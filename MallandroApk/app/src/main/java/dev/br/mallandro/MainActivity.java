@@ -5,7 +5,6 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -142,12 +141,12 @@ public class MainActivity extends Activity {
         View.OnClickListener shareListener = new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                String message = "Pegadinha do Mallandro - https://play.google.com/store/apps/details?id=dev.br.mallandro";
+                String message = "Pegadinha no celular - https://play.google.com/store/apps/details?id=dev.br.pegadinha";
                 Intent share = new Intent(Intent.ACTION_SEND);
                 share.setType("text/plain");
                 share.putExtra(Intent.EXTRA_TEXT, message);
 
-                startActivity(Intent.createChooser(share, "Pegadinha do Mallandro"));
+                startActivity(Intent.createChooser(share, "Pegadinha no celular"));
 
             }
         };
@@ -176,15 +175,9 @@ public class MainActivity extends Activity {
 
             int imageResource = 0;
             if(pos==0){
-                imageResource = R.drawable.mallandro1;
+                imageResource = R.drawable.gorila;
             } else if(pos==1){
-                imageResource = R.drawable.mallandro2;
-            } else if(pos==2){
-                imageResource = R.drawable.mallandro3;
-            } else if(pos==3){
-                imageResource = R.drawable.mallandro4;
-            } else if(pos==4){
-                imageResource = R.drawable.porta;
+                imageResource = R.drawable.mallandro;
             }
             currentImageID = imageResource;
             Drawable image = getResources().getDrawable(imageResource);

@@ -14,6 +14,7 @@ public class PegadinhaReceiver extends BroadcastReceiver {
         // an Intent broadcast.
         //start activity
         Intent i = new Intent();
+        //i.setClassName("dev.br.pegadinha", "dev.br.pegadinha.PegadinhaActivity");
         i.setClassName("dev.br.mallandro", "dev.br.mallandro.PegadinhaActivity");
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         i.putExtra(MainActivity.SOUND_EXTRA, intent.getIntExtra(MainActivity.SOUND_EXTRA, 0));

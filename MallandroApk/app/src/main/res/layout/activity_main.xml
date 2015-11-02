@@ -114,7 +114,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/mallandro1"
+        android:src="@drawable/gorila"
         android:scaleType="fitCenter"
         android:gravity="center_horizontal"
         android:layout_above="@+id/button_scare"

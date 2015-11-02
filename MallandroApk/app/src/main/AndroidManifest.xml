@@ -31,7 +31,7 @@
         </activity>
 
         <receiver
-            android:name=".PegadinhaReceiver"
+            android:name="dev.br.mallandro.PegadinhaReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -40,7 +40,7 @@
         </receiver>
 
         <activity
-            android:name=".PegadinhaActivity"
+            android:name="dev.br.mallandro.PegadinhaActivity"
             android:label="@string/title_activity_scare"
             android:screenOrientation="portrait"></activity>
 

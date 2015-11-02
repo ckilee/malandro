@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pegadinha do Mallandro</string>
+    <string name="app_name">Pegadinha no celular</string>
 
 
     <string name="action_settings" translatable="false">Settings</string>
@@ -23,14 +23,11 @@
     </string-array>
 
     <string-array name="image_arrays" >
-        <item>Mallandro 1</item>
-        <item>Mallandro 2</item>
-        <item>Mallandro 3</item>
-        <item>Mallandro 4</item>
-        <item>Porta</item>
+        <item>Gorila</item>
+        <item>Mallandro</item>
     </string-array>
 
-    <string name="title_activity_scare" translatable="false">Pegadinha do Malandro</string>
+    <string name="title_activity_scare" translatable="false">Pegadinha no celular</string>
 
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9505366133372164/6787726331</string>
     <string name="banner_ad_unit_id2" translatable="false">ca-app-pub-9505366133372164/8264459535</string>
